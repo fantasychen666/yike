@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-10 11:06:33
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-10 17:01:22
+* @Last Modified time: 2017-07-10 18:48:14
 */
 //app.js是整个angularjs应用程序的入口
 
@@ -17,10 +17,12 @@
 	yike.run(["$rootScope",function($rootScope) {
 		//往$rootScope上绑定toggle方法
 		$rootScope.collapsed = false;
+		$rootScope.ismenu = true;
 		$rootScope.toggle = function() {
 			//1.找到navs节点，将其left属性改变
 			//2。找到dd节点，改变其transform的值
 			$rootScope.collapsed = !$rootScope.collapsed;
+			$rootScope.ismenu = !$rootScope.ismenu;
 			//方法2：找到navs节点，添加一个类名为collapse
 			//根据collapsed的值判断是收起还是打开
 			var dds = document.querySelectorAll(".navs dd");

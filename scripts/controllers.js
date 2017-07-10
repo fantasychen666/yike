@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-10 15:30:20
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-10 16:53:38
+* @Last Modified time: 2017-07-10 19:37:05
 */
 
 'use strict';
@@ -21,6 +21,7 @@
 		{"url":"#favorite","icon":"icon-heart","txt":"我的喜欢"},
 		{"url":"#setting","icon":"icon-cog","txt":"设置"},
 		];
+		$scope.
 	}]);
 
 

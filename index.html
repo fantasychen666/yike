@@ -6,6 +6,7 @@
 	<title>豆瓣一刻</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="public/less/main.css">
+	<link rel="stylesheet" href="public/less/guanbi.css">
 </head>
 <body ng-app="yike">
 	<div class="viewport">
@@ -30,9 +31,9 @@
 			<!-- 头部 -->
 			<div ng-class="{header:true,collapse:collapsed}" >
 				<a href="javascript:;" class="menu icon-menu" ng-click="toggle()"></a>
-				<h2>今日一刻</h2>
+				<h2>{{}}</h2>
 				<a href="javascript:;" class="search icon-search"></a>
-
+				<a href="#" class="bell icon-bell"></a>
 			</div>
 			<!-- 主体 -->
 			<div ng-class="{body:true,collapse:collapsed}">
