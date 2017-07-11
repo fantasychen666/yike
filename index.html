@@ -31,12 +31,15 @@
 			<!-- 头部 -->
 			<div ng-class="{header:true,collapse:collapsed}" >
 				<a href="javascript:;" class="menu icon-menu" ng-click="toggle()"></a>
-				<h2>{{}}</h2>
+				<h2>{{title}}</h2>
 				<a href="javascript:;" class="search icon-search"></a>
 				<a href="#" class="bell icon-bell"></a>
 			</div>
+			
 			<!-- 主体 -->
 			<div ng-class="{body:true,collapse:collapsed}">
+			<!-- 使用自定义指令添加loading的img节点 -->
+				<div loading src="./public/images/loading.gif" ng-hide="loaded"></div>
 				<div ng-view></div>
 			</div>
 		</div>
@@ -46,4 +49,5 @@
 <script src="bower_components/angular-route/angular-route.min.js"></script>
 <script src="scripts/controllers.js"></script>
 <script src="scripts/app.js"></script>
+<script src="scripts/directives.js"></script>
 </html>

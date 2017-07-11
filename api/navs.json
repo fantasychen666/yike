@@ -1,0 +1,8 @@
+{
+		"nav":[{"url":"#today","icon":"icon-home","txt":"今日一刻"},
+		{"url":"#older","icon":"icon-file-empty","txt":"往期内容"},
+		{"url":"#author","icon":"icon-pencil","txt":"热门作者"},
+		{"url":"#category","icon":"icon-menu","txt":"栏目浏览"},
+		{"url":"#favorite","icon":"icon-heart","txt":"我的喜欢"},
+		{"url":"#setting","icon":"icon-cog","txt":"设置"}]
+}
