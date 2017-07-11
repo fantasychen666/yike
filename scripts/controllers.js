@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-10 15:30:20
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-11 18:44:53
+* @Last Modified time: 2017-07-11 20:07:34
 */
 
 'use strict';
@@ -51,8 +51,16 @@ angular.module("controllers",[])
 	});
 	$rootScope.title = "往期内容";
 }])
-.controller("authorCtr",["$scope","$http",function($scope,$http){
+.controller("authorCtr",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
 	$rootScope.title = "热门作者";
+	$rootScope.loaded = true;
+	$http({
+		method:"GET",
+		url:"./api/author.php"
+	}).then(function(result){
+		$scope.authors = result.data.authors;
+	});
+
 }]);
 
 
