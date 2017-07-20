@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-10 15:30:20
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-11 20:07:34
+* @Last Modified time: 2017-07-12 09:17:45
 */
 
 'use strict';
@@ -18,6 +18,7 @@ angular.module("controllers",[])
 		}).then(function(result){
 			$rootScope.datas = result.data.nav;
 		});
+	
 	}])
 //今日一刻的控制器
 .controller("todayCtr",["$scope","$filter","$http","$rootScope",function($scope,$filter,$http,$rootScope){

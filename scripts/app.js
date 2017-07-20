@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-07-10 11:06:33
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-11 19:52:57
+* @Last Modified time: 2017-07-12 09:16:15
 */
 //app.js是整个angularjs应用程序的入口
 
@@ -45,6 +45,7 @@
 		};
 		//toggle函数结束
 	}]);
+	
 	//解决锚点乱码bug
 	yike.config(function($locationProvider){
 		$locationProvider.hashPrefix("");
